@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Poluição nos Bueiros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Poluição nos Bueiros</h1>
+        <div id="personagem-container">
+            <img id="personagem-img" src="lixo-papel.png" alt="Lixo Papel" />
+            <p id="descricao-personagem">Você encontrou um lixo de papel na rua. O que fazer?</p>
+        </div>
+        
+        <div id="alternativas">
+            <button onclick="escolherAlternativa(true)">Colocar no Lixo Orgânico</button>
+            <button onclick="escolherAlternativa(false)">Colocar no Lixo Reciclável</button>
+        </div>
+        
+        <div id="feedback"></div>
+        <div id="score">
+            <p>Você acertou: <span id="acertos">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
